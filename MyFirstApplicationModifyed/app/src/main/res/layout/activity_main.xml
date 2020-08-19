@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/bt_show_toast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="clickOn_1btn"
+        android:text="@string/button_label_toast"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_0"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="72sp"
+        app:layout_constraintBottom_toTopOf="@id/bt_count"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bt_show_toast" />
+
+    <TextView
+        android:id="@+id/_1message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/result_message"
+        android:textSize="21sp"
+        android:visibility="invisible"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@id/bt_count"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteX="145dp" />
+
+    <Button
+        android:id="@+id/bt_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="clickOn_2btn"
+        android:text="@string/button_label_count"
+        app:layout_constraintBottom_toTopOf="@id/_restart" />
+    <Button
+        android:id="@+id/_restart"
+        android:text="@string/restart_counter"
+        android:textAlignment="center"
+        android:onClick="clickOn_3btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

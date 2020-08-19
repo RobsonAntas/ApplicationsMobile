@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Hello Toast Application</string>
+    <string name="text_1stTextView">Toast</string>
+    <string name="text_2ndTextView">Hello Toast !</string>
+    <string name="text_3thTextView">Count</string>
+    <string name="text_4thTextView">0</string>
+    <string name="reset">Reset</string>
+</resources>
